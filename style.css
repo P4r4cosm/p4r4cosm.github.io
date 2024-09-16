@@ -1,0 +1,212 @@
+/* Общие стили для страницы */
+body {
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Верхний баннер с логотипом и поисковой строкой */
+header {
+    display: flex;
+    justify-content: flex-start;  /* Выравниваем элементы по началу */
+    align-items: center;
+    border-bottom: 2px solid #eaeaea;
+}
+/* Название сайта (логотип) */
+/* Название сайта (логотип) как кнопка */
+.logo {
+    font-size: 72px;
+    font-weight: bold;
+    color: #ff6600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    margin-right: 5%;  /* Промежуток справа от логотипа */
+}
+
+
+.logo:hover {
+    color: #e65c00;          /* Изменение цвета при наведении */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);  /* Легкая тень при наведении */
+}
+
+
+/* Поисковая строка */
+.search-bar {
+    flex-grow: 1;  /* Заставляем поисковую строку растягиваться */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 1%  /* Промежуток справа от поисковой строки */
+}
+
+/* Кнопка поиска */
+.search-btn {
+    padding: 12px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #45a049;
+}
+
+/* Стиль карточки товара */
+.product-card {
+    margin-top: 20px;
+}
+
+/* Название товара */
+.product-title {
+    font-size: 32px;            /* Увеличенный размер шрифта */
+    font-weight: bold;          /* Жирный шрифт */
+    color: #333333;             /* Темный цвет для контраста */
+    text-transform: uppercase;  /* Преобразование текста в верхний регистр */
+    letter-spacing: 2px;        /* Пространство между буквами */
+    text-align: left;         /* Выравнивание по центру */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень для объема */
+    margin-bottom: 20px;   
+    font-family: 'Roboto', sans-serif;     /* Отступ снизу */
+}
+
+
+/* Сетка для изображения и информации */
+.product-info {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Выравнивание изображение и текста по верхнему краю */
+}
+
+/* Изображение товара: сохранение пропорций */
+.product-image {
+      /* Максимальная ширина изображения */
+    width: 38%;       /* Изображение будет адаптивным и занимать всю доступную ширину */
+    height: auto;      /* Автоматическая высота для сохранения пропорций */
+    object-fit: contain; /* Гарантирует, что изображение будет вписано в блок, сохраняя пропорции */
+    border-radius: 10px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    background-color: #eaeaea;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Краткое описание */
+.short-description {
+    color: #707070;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Подробное описание товара */
+.detailed-description {
+    color: #484343;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Характеристики товара */
+.features-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+}
+
+.features-list img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Кнопка "Купить" */
+.buy-btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.buy-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Стиль футера */
+.footer-text {
+    text-align: center;
+    color: #707070;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Стили для навигационного меню */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.nav-menu li a:hover {
+    background-color: #ff6600;
+    color: #ffffff;
+}
