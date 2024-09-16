@@ -81,7 +81,8 @@ header {
     font-weight: bold;          /* Жирный шрифт */
     color: #333333;             /* Темный цвет для контраста */
     text-transform: uppercase;  /* Преобразование текста в верхний регистр */
-    letter-spacing: 2px;        /* Пространство между буквами */
+    letter-spacing: 2px; 
+    margin-left: 38%;       
     text-align: left;         /* Выравнивание по центру */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень для объема */
     margin-bottom: 20px;   
@@ -116,6 +117,7 @@ h2 {
     background-color: #eaeaea;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
