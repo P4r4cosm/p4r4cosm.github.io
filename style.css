@@ -37,7 +37,7 @@ header {
 
 .logo:hover {
     color: #e65c00;          /* Изменение цвета при наведении */
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);  /* Легкая тень при наведении */
+    text-shadow: 2px 2px 10px #0000004d;  /* Легкая тень при наведении */
 }
 
 
@@ -52,19 +52,24 @@ header {
 }
 
 /* Кнопка поиска */
+/* Кнопка поиска с картинкой */
 .search-btn {
-    padding: 12px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 0;  /* Убираем внутренние отступы */
+    background-color: transparent;  /* Прозрачный фон */
+    border: none;  /* Убираем границу */
+    cursor: pointer;  /* Указатель мыши */
+    display: flex;  /* Для центровки изображения */
+    align-items: center;
 }
 
-.search-btn:hover {
-    background-color: #45a049;
+.search-icon {
+    width: 24px;  /* Задаем ширину иконки */
+    height: 24px;  /* Задаем высоту иконки */
 }
 
+.search-btn:hover .search-icon {
+    filter: drop-shadow(3px 1px 2px #0000004d);/* Эффект затемнения при наведении */
+}
 /* Стиль карточки товара */
 .product-card {
     margin-top: 20px;
@@ -94,7 +99,7 @@ header {
 /* Изображение товара: сохранение пропорций */
 .product-image {
       /* Максимальная ширина изображения */
-    width: 38%;       /* Изображение будет адаптивным и занимать всю доступную ширину */
+    width: 37%;       /* Изображение будет адаптивным и занимать всю доступную ширину */
     height: auto;      /* Автоматическая высота для сохранения пропорций */
     object-fit: contain; /* Гарантирует, что изображение будет вписано в блок, сохраняя пропорции */
     border-radius: 10px;
