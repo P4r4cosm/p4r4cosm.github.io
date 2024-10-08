@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-   
     width: 90%;
     margin: 0 auto;
     padding: 0 20px;
@@ -18,12 +17,11 @@ body {
 /* Верхний баннер с логотипом и поисковой строкой */
 header {
     display: flex;
-    justify-content: flex-start;  /* Выравниваем элементы по началу */
+    justify-content: flex-start;  
     align-items: center;
     border-bottom: 2px solid #eaeaea;
 }
-/* Название сайта (логотип) */
-/* Название сайта (логотип) как кнопка */
+
 .logo {
     font-size: 72px;
     font-weight: bold;
@@ -32,78 +30,67 @@ header {
     letter-spacing: 1.5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    margin-right: 5%;  /* Промежуток справа от логотипа */
+    margin-right: 5%;
 }
-
 
 .logo:hover {
-    color: #e65c00;          /* Изменение цвета при наведении */
-    text-shadow: 2px 2px 10px #0000004d;  /* Легкая тень при наведении */
+    color: #e65c00;
+    text-shadow: 2px 2px 10px #0000004d;
 }
 
-
-/* Поисковая строка */
 .search-bar {
-    flex-grow: 1;  /* Заставляем поисковую строку растягиваться */
+    flex-grow: 1;
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-right: 1%  /* Промежуток справа от поисковой строки */
+    margin-right: 1%;
 }
 
-/* Кнопка поиска */
-/* Кнопка поиска с картинкой */
 .search-btn {
-    padding: 0;  /* Убираем внутренние отступы */
-    background-color: transparent;  /* Прозрачный фон */
-    border: none;  /* Убираем границу */
-    cursor: pointer;  /* Указатель мыши */
-    display: flex;  /* Для центровки изображения */
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
     align-items: center;
 }
 
 .search-icon {
-    width: 24px;  /* Задаем ширину иконки */
-    height: 24px;  /* Задаем высоту иконки */
+    width: 24px;
+    height: 24px;
 }
 
 .search-btn:hover .search-icon {
-    filter: drop-shadow(3px 1px 2px #0000004d);/* Эффект затемнения при наведении */
+    filter: drop-shadow(3px 1px 2px #0000004d);
 }
-/* Стиль карточки товара */
+
 .product-card {
     margin-top: 20px;
 }
 
-/* Название товара */
 .product-title {
-    font-size: 32px;            /* Увеличенный размер шрифта */
-    font-weight: bold;          /* Жирный шрифт */
-    color: #333333;             /* Темный цвет для контраста */
-    text-transform: uppercase;  /* Преобразование текста в верхний регистр */
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
     letter-spacing: 2px; 
-    margin-left: 38%;       
-    text-align: left;         /* Выравнивание по центру */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень для объема */
-    margin-bottom: 20px;   
-    font-family: 'Roboto', sans-serif;     /* Отступ снизу */
+    margin-left: 38%;
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
-
-/* Сетка для изображения и информации */
 .product-info {
     display: flex;
     gap: 20px;
-    align-items: flex-start; /* Выравнивание изображение и текста по верхнему краю */
+    align-items: flex-start;
 }
 
-/* Изображение товара: сохранение пропорций */
 .product-image {
-      /* Максимальная ширина изображения */
-    width: 37%;       /* Изображение будет адаптивным и занимать всю доступную ширину */
-    height: auto;      /* Автоматическая высота для сохранения пропорций */
-    object-fit: contain; /* Гарантирует, что изображение будет вписано в блок, сохраняя пропорции */
+    width: 37%;
+    height: auto;
+    object-fit: contain;
     border-radius: 10px;
 }
 
@@ -119,29 +106,23 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
 }
 
-/* Краткое описание */
 .short-description {
     color: #707070;
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
-/* Подробное описание товара */
 .detailed-description {
     color: #484343;
     font-size: 16px;
     line-height: 24px;
     text-align: left;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
-/* Характеристики товара */
 .features-list {
     list-style-type: none;
     padding-left: 0;
@@ -158,7 +139,6 @@ h2 {
     margin-right: 10px;
 }
 
-/* Кнопка "Купить" */
 .buy-btn {
     display: inline-block;
     background-color: #ff6600;
@@ -168,14 +148,12 @@ h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
 }
 
 .buy-btn:hover {
     background-color: #e65c00;
 }
 
-/* Стиль футера */
 .footer-text {
     text-align: center;
     color: #707070;
@@ -183,7 +161,6 @@ h2 {
     margin-top: 20px;
     padding: 10px 0;
     border-top: 1px solid #eaeaea;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* Стили для навигационного меню */
@@ -217,4 +194,39 @@ nav {
 .nav-menu li a:hover {
     background-color: #ff6600;
     color: #ffffff;
+}
+
+/* Встраивание видео */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Соотношение 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .product-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-title {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .product-image {
+        width: 100%;
+    }
 }
